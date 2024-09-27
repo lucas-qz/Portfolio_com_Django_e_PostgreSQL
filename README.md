@@ -42,9 +42,6 @@ Esse é um projeto de portfólio conectado a um banco de dados com um sistema de
 
 <br/><br/>
 
-## 🔎 Status do Projeto
-![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Em%20Desenvolvimento-green)
-<br/><br/>
 
 ## 👨🏼 Autor - Lucas Queiróz
 <div align="left"> 
