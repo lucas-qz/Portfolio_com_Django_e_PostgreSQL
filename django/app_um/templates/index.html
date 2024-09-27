@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Coloque-seu-codigo-aqui"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-Coloque-seu-codigo-aqui");
+  </script>
+  <meta name="google-site-verification" content="codigo-aqui" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description"
+    content="Seu Nome | Portfólio. Sou desenvolvedor de sistemas web. Visite e conheça sobre mim e meus projetos. Gosto de criar aplicações que melhorem a vida das pessoas e facilite o dia a dia das empresas." />
+  <meta name="keywords"
+    content="Seu Nome, Seu Nome portfólio, Seu Nome programador, Seu Nome desenvolvedor back-end, Seu Nome desenvolvedor python, Seu Nome desenvolvedor django, Seu Nome desenvolvedor web, Seu Nome desenvolvedor API, Seu Nome desenvolvedor de sistemas, Seu Nome desenvolvedor de software, Seu Nome linkedin" />
+  <meta name="author" content="Seu Nome" />
+  <meta property="og:image" content="../static/src/png/Preview-card-min.png" />
+  <meta property="og:title" content="Seu Nome | Portfolio" />
+  <meta property="og:description"
+    content="Oi! Meu nome é Seu Nome. Sou desenvolvedor de sistemas web. Visite e conheça sobre mim e meus projetos. Gosto de criar aplicações que melhorem a vida das pessoas e facilite o dia a dia das empresas." />
+
+  <meta property="og:url" content="http://seudominio.com.br" />
+  <meta property="og:site_name" content="Seu Nome Portfolio" />
+
+  <meta name="twitter:image:src" content="../static/src/png/Preview-card-min.png" />
+  <meta name="twitter:site" content="@Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Seu Nome | Portfolio" />
+  <meta name="twitter:description"
+  content="Oi! Meu nome é Seu Nome. Sou desenvolvedor de sistemas web. Visite e conheça sobre mim e meus projetos. Gosto de criar aplicações que melhorem a vida das pessoas e facilite o dia a dia das empresas." />
+  <title>Seu Nome | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="../static/src/png/main-favicon1.png" />
+
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="../static/css/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body class="body">
+  <audio loop="" id="audioPlayer" style="display: none">
+    <source src="../static/src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar">
+      <div class="hey">&#60;Bem Vindo!&#62;</div>
+        <div class="logo" tabindex="0" aria-label="Seu Nome logo">
+          <div class="logo-top">
+            <img src="../static/src/png/avatar2.png" alt="animation-head" id="nav-avatar"/>
+          </div>
+        </div>
+
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="" data-aos-delay="0">
+            <a onclick="scrolltoTopfunction()" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
+          </li>         
+
+          <li class="about" class="navbar-tabs-li" data-aos="" data-aos-delay="0">
+            <a href="#about" aria-label="about menu button">
+              &#60;/Sobre_Mim&#62;
+            </a>
+          </li>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="" data-aos-delay="0">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;/Habilidades&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="" data-aos-delay="0">
+            <a href="#projects" aria-label="projects menu button">
+              &#60;/Projetos&#62;
+            </a>
+          </li>
+
+          <li class="" class="navbar-tabs-li" data-aos="" data-aos-delay="0">
+            <a href="#contato" aria-label="">
+              &#60;/Contato&#62;
+            </a>
+          </li> 
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a onclick="scrolltoTopfunction()" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            &#60;/Sobre_Mim&#62;
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Habilidades&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projetos&#62;
+          </a>
+        </li>
+
+        <li id="" class="mobile-navbar-tabs-li " onclick="hidemenubyli()">
+          <a href="#contato" tabindex="0" aria-label="">
+            &#60;/Contato&#62;
+          </a>
+        </li>        
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+      <div class="text-content">
+
+        <article id="name" data-aos="" data-aos-delay="">
+          <p class="jello">A</p>
+          <p class="jello">a</p>
+          <p class="jello">a</p>
+          <p class="jello">a</p>
+          <p class="jello">a</p>
+          &nbsp;
+          <p class="jello">A</p>
+          <p class="jello">a</p>
+          <p class="jello">a</p>
+          <p class="jello">a</p>
+          <p class="jello">a</p>
+          <p class="jello">a</p>
+          <p class="jello">a</p>
+        </article>
+
+        <article id="work" data-aos="" data-aos-delay="">
+          <div>
+            <p class="jello">A</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+          </div>
+          <div>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+          </div>
+          <div>
+            <p class="jello">A</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>
+            <p class="jello">a</p>            
+          </div>
+        </article>
+        <p id="info-para" data-aos="" data-aos-delay="">
+          Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text.<br /><br /> 
+        </p>
+        
+        <div class="contact-btn-div " data-aos="" data-aos-delay="" style="padding-top: 25px;">
+          <a href="#projects" tabindex="-1">
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text" > Projetos </p>
+              <span class="letsTalkBtn-BG"></span>
+            </button>
+          </a> 
+          <div>
+            <a href="{% url  'r' id='linkedin' %}" target="_blank"  class="fa fa-linkedin" style="font-size: 30px;"></a>          
+            <a href="{% url  'r' id='github' %}" target="_blank"  class="fa fa-github" style="font-size: 30px;"></a>
+            <a href="{% url  'r' id='email' %}"  target="_blank"  class="fa fa-envelope" style="font-size: 30px;"></a>
+            <a href="{% url  'r' id='whatsapp' %}" target="_blank" class="fa fa-whatsapp" style="font-size: 30px;"></a>
+
+                     
+          <div>
+        </div>
+        <!-- contact-btn-div -->
+      </div>
+     
+    </section>
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/Sobre_Mim&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info">
+            <p tabindex="0" id="info-para">
+              Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text.
+            </p>
+            <br />
+            <p tabindex="0">
+              Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text.
+            </p>
+            <br />
+            <p tabindex="0">
+              Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text.
+            </p>            
+             <!-- Resume button -->
+            <button class="resume-btn" id="resume-btn" onclick="openURL()">
+              <div class="sign">
+                <svg viewBox="0 0 640 512">
+                  <path
+                    d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+                </svg>
+              </div>
+              <div class="text">Download CV</div>
+            </button>          
+          </div>
+
+          <div class="dp" data-aos="">
+            <img src="../static/src/png/avatar3.png" alt="Seu Nome" tabindex="0" aria-label="image of vinod" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+        <div class="section-heading" data-aos="">
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;/Habilidades&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="frontend-dev-section" style="display: flow; margin-top: 15px;">
+          <!-- <h3 class="frontend-dev-heading" data-aos="" tabindex="0"
+            aria-label="As a frontend a developer these are the skills i have">
+            Tech Stack
+          </h3> -->
+          <p id="info-para" data-aos="" data-aos-delay="">
+            Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text.
+          </p><br /><br />
+
+          <div class="tab" data-aos="" data-aos-delay="600">
+            <button class="tablinks active" onclick="openCity(event, 'London')" id="info-paraW">Linguagens</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')" id="info-paraW">Banco Dados</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')" id="info-paraW">Ferramentas</button>
+          </div>
+  
+          <div id="London" class="tabcontent" style="display: block;" data-aos="" data-aos-delay="600">
+            <ul class="tech-stack-wrapper">            
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/python.png" alt="Python" class="tech-stack-logo" />
+                <span class="tooltip " id="info-paraX">Python</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/django.png" alt="Django" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">Django</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/flask_branco.png" alt="Flask" class="tech-stack-logo needtobeinvert" />
+                <span class="tooltip" id="info-paraX">Flask</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/API.png" alt="API Rest" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">API Rest</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/drf.png" alt="Django Rest" class="tech-stack-logo needtobeinvert" />
+                <span class="tooltip" id="info-paraX">Django Rest</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/htmllogo.png" alt="HTML" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">HTML</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/csslogo.png" alt="CSS" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">CSS</span>
+              </li>
+              
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/bootstraplogo.png" alt="Bootstrap" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">Bootstrap</span>
+              </li>  
+              
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/php.png" alt="PHP" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">PHP</span>
+              </li>       
+            </ul>
+          </div>
+  
+          <div id="Paris" class="tabcontent"  data-aos="" data-aos-delay="600">
+            <ul class="tech-stack-wrapper">            
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/sqlserver.png" alt="SQL Server" class="tech-stack-logo" />
+                <span class="tooltip " id="info-paraX">SQL Server</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/oracle.png" alt="Oracle" class="tech-stack-logo " />
+                <span class="tooltip" id="info-paraX">Oracle</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/mysql.png" alt="MySQL" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">MySQL</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/postgresql.png" alt="PostgreSQL" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">PostgreSQL</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/mongodb.png" alt="MongoDB" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">MongoDB</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div id="Tokyo" class="tabcontent" data-aos="" data-aos-delay="600">
+            <ul class="tech-stack-wrapper"> 
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/gitlogo.png" alt="GIT" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">GIT</span>
+              </li>
+                    
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/githublogo.png" alt="GitHub" class="tech-stack-logo needtobeinvert" />
+                <span class="tooltip" id="info-paraX">GitHub</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/docker.png" alt="Docker" class="tech-stack-logo" />
+                <span class="tooltip " id="info-paraX">Docker</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/swarm.png" alt="Docker Swarm" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">Docker Swarm</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/kubernetes.png" alt="Kubernetes" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">Kubernetes</span>
+              </li>
+
+              <li class="tech-stack-box aos-init aos-animate " data-aos="">
+                <img src="../static/src/png/aws.png" alt="AWS" class="tech-stack-logo" />
+                <span class="tooltip" id="info-paraX">AWS</span>
+              </li>
+
+            </ul>    
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+    <section class="projects-section-container" id="projects">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;/Projetos&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="project-boxes-div ">
+          <!----------------->          
+          <div data-aos="" class="project-box-wrapper">
+            <div class="project-box project-box2 " id="project-box2">             
+              <div class="info-div">
+                <img src="../static/src/png/z1.png" alt="" class="faviconforProject" />
+                <article class="ProjectHeading">Sistema</article>
+                <p class="ProjectDescription">
+                  Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text.
+                </p>
+                <div class="project-buttons">
+                  <a href="{% url  'r' id='projeto1_github' %}" target="_blank" class="github-redirect" aria-label="Visite MarcPonto no GitHub">
+                    <img src="../static/src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="{% url  'r' id='projeto1_ver' %}" target="_blank" class="cta" aria-label="Veja MarcPonto ao vivo">
+                    <span>Ver Projeto</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="../static/src/webp/Group1.png" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+          <!----------------->
+          <div data-aos="" class="project-box-wrapper">
+            <div class="project-box project-box2 " id="project-box2">             
+              <div class="info-div">
+                <img src="../static/src/png/z2.png" alt="" class="faviconforProject" />
+                <article class="ProjectHeading">Sistema</article>
+                <p class="ProjectDescription">
+                  Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text.
+                </p>
+                <div class="project-buttons">
+                  <a href="{% url  'r' id='projeto2_github' %}" target="_blank" class="github-redirect" aria-label="Visite Potfolio no GitHub">
+                    <img src="../static/src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="{% url  'r' id='projeto2_ver' %}"  target="_blank" class="cta" aria-label="Veja Potfolio ao vivo">
+                    <span>Ver Projeto</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="../static/src/webp/Group2.png" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+          <!----------------->
+          <div data-aos="" class="project-box-wrapper">
+            <div class="project-box project-box2 " id="project-box2">             
+              <div class="info-div">
+                <img src="../static/src/png/z3.png" alt="" class="faviconforProject" />
+                <article class="ProjectHeading">Em Construção</article>
+                <p class="ProjectDescription">
+                  Projeto em contrução Projeto em contrução Projeto em contrução Projeto em contrução Projeto em contrução.
+                </p>
+                <div class="project-buttons">
+                  <a  target="_blank" class="github-redirect" aria-label="Visite MarcPonto no GitHub">
+                    <img src="../static/src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a  target="_blank" class="cta" aria-label="Veja MarcPonto ao vivo">
+                    <span>Ver Projeto</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="../static/src/webp/Group3.png" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+          <!----------------->
+          <div data-aos="" class="project-box-wrapper">
+            <div class="project-box project-box2 " id="project-box2">             
+              <div class="info-div">
+                <img src="../static/src/png/z4.png" alt="" class="faviconforProject" />
+                <article class="ProjectHeading">Em Construção</article>
+                <p class="ProjectDescription">
+                  Projeto em contrução Projeto em contrução Projeto em contrução Projeto em contrução Projeto em contrução.
+                </p>
+                <div class="project-buttons">
+                  <a  target="_blank" class="github-redirect" aria-label="Visite MarcPonto no GitHub">
+                    <img src="../static/src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a  target="_blank" class="cta" aria-label="Veja MarcPonto ao vivo">
+                    <span>Ver Projeto</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="../static/src/webp/Group4.png" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+          <!----------------->
+          <div data-aos="" class="project-box-wrapper">
+            <div class="project-box project-box2 " id="project-box2">             
+              <div class="info-div">
+                <img src="../static/src/png/z5.png" alt="" class="faviconforProject" />
+                <article class="ProjectHeading">Em Construção</article>
+                <p class="ProjectDescription">
+                  Projeto em contrução Projeto em contrução Projeto em contrução Projeto em contrução Projeto em contrução.
+                </p>
+                <div class="project-buttons">
+                  <a  target="_blank" class="github-redirect" aria-label="Visite MarcPonto no GitHub">
+                    <img src="../static/src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a  target="_blank" class="cta" aria-label="Veja MarcPonto ao vivo">
+                    <span>Ver Projeto</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="../static/src/webp/Group5.png" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+          <!----------------->
+          <div data-aos="" class="project-box-wrapper">
+            <div class="project-box project-box2 " id="project-box2">             
+              <div class="info-div">
+                <img src="../static/src/png/z6.png" alt="" class="faviconforProject" />
+                <article class="ProjectHeading">Em Construção</article>
+                <p class="ProjectDescription">
+                  Projeto em contrução Projeto em contrução Projeto em contrução Projeto em contrução Projeto em contrução.
+                </p>
+                <div class="project-buttons">
+                  <a  target="_blank" class="github-redirect" aria-label="Visite MarcPonto no GitHub">
+                    <img src="../static/src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a  target="_blank" class="cta" aria-label="Veja MarcPonto ao vivo">
+                    <span>Ver Projeto</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="../static/src/webp/Group6.png" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+          <!----------------->    
+        </div>
+      </div>
+    </section>
+  
+  </main>
+  <!-- main ends here -->
+
+    <section class="contato-section-container" id="contato"></section>  
+      <footer id="footer">
+        <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+          <article aria-label="Back to top">&#8592;SUBIR</article>
+        </button>
+        <div class="footer-background needtobeinvert">
+          <div class="footer-blob"></div>
+        </div>
+        <div class="footer-foreground">
+          <div class="footercontainer">
+            <!--<div class="two-words">
+              <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
+                "Learning, Living, and Leveling Up."
+              </article>
+            </div>-->
+
+            <div class="social-media-container">
+              <div class="getintouch-heading" data-aos="">
+                  <h2 class="section-heading-article " >
+                    &#60;/Entre Em Contato&#62;
+                  </h2>
+              </div>
+
+              <div class="logos needtobeinvert"> 
+                <a href="{% url  'r' id='linkedin' %}" target="_blank"
+                  aria-label="My Linkdin"><svg class="SocialHandle " viewBox="0 0 448 512">
+                    <path
+                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                  </svg></a>
+
+                <a href="{% url  'r' id='github' %}" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
+                    class="SocialHandle">
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                  </svg></a>
+
+                <a href="{% url  'r' id='email' %}" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
+                    viewBox="0 0 512 512">
+                    <path
+                      d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                  </svg></a>
+
+                  <a href="{% url 'r' id='whatsapp' %}" target="_blank" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16" style="color: #fff;">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                  </svg></a>            
+              </div>
+            </div>
+
+
+            <div class="footer-avatar-container ">
+              <img src="../static/src/png/footer-avatar-vinod2.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar"/>
+            </div>
+            <div class="footer-bottom">
+              <article >
+                Desenvolvido por 'Seu Nome'
+                &#169; <p id="demo"></p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="zap">
+          <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+              aria-label="settings for sound and appearance"></label>
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                aria-label="switch appearance"></label>
+            </div>
+            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+              <input type="checkbox" id="switchforsound" onclick="playpause()" />
+              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
+                class="needtobeinvert"></label>
+            </div>
+          </div>
+        </div>     
+          
+      </footer>
+      <!-- footer ends here -->
+    </section>
+
+    <script src="../static/js/main.js"></script>
+
+    <script src="../static/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      function openURL() {
+        var url = "{% url 'r' id='curriculo' %}";
+
+        window.open(url, "_blank");
+      }
+    </script>
+
+    <script>
+      const cursorInner = document.getElementById("cursor-inner");
+      const cursorOuter = document.getElementById("cursor-outer");
+      const links = document.querySelectorAll("a,label,button");
+
+      document.addEventListener("mousemove", function (e) {
+        const posX = e.clientX;
+        const posY = e.clientY;
+
+        cursorInner.style.left = `${posX}px`;
+        cursorInner.style.top = `${posY}px`;
+
+        // cursorOuter.style.left = `${posX}px`;
+        // cursorOuter.style.top = `${posY}px`;
+
+        cursorOuter.animate(
+          {
+            left: `${posX}px`,
+            top: `${posY}px`,
+          },
+          { duration: 0.5, fill: "forwards" }
+        );
+
+        links.forEach((link) => {
+          link.addEventListener("mouseenter", () => {
+            cursorInner.classList.add("hover");
+            cursorOuter.classList.add("hover");
+          });
+          link.addEventListener("mouseleave", () => {
+            cursorInner.classList.remove("hover");
+            cursorOuter.classList.remove("hover");
+          });
+        });
+      });
+    </script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="../static/js/widget.prod.min.js" data-id="vinod.jangid07" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="18" data-y_margin="18"></script>
+</body>
+
+</html>

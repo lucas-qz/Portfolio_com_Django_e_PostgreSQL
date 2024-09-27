@@ -1,0 +1,31 @@
+version: '3.3'
+
+services:
+  db: 
+    build: ./postgresql/ 
+    restart: always
+    env_file: 
+      - ./config/db.env
+    ports:        
+      - "15432:5432"   
+    networks:           
+      - dockercompose
+    volumes:
+      - db-volume:/var/lib/postgresql/data
+
+  backend: 
+    depends_on:  
+      - db 
+    build: ./django/   
+    ports:           
+      - "8000:8000"
+    restart: always      
+    networks:        
+      - dockercompose
+
+networks:  
+  dockercompose:
+    driver: bridge 
+    
+volumes:
+    db-volume:
