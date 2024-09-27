@@ -1,41 +1,36 @@
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/lucas-qz/SistemaPonto)
 
-# ⏲️ Sistema de Registro de Ponto Eletrônico ⏲️
-Esse é um projeto livre cujo objetivo é disponibilizar um sistema de registro de ponto eletrônico simples para pequenas empresas.
-Ele permite que os funcionários realizem a marcação do ponto eletrônico pelo desktop, celular ou tablet.
+# :octocat: Portfólio Com Banco de Dados :octocat:
+Esse é um projeto de portfólio conectado a um banco de dados com um sistema de captura de dados dos visitantes. É possível implementar esse tipo de solução para qualquer sistema, possibilitando analisar o comportamento dos visitantes e usuários em um sistema, implementar campanhas de marketing, captura de leads, enfim, as possibilidades são enormes.
 <br/><br/>
 
-## 🛠️ Funcionalidades
-- criar uma conta pessoal.
-- realizar registros de ponto capturando data e horário da marcação.
-- disponibiliza um relatório com todas as marcações realizadas pelo funcionário.
-- dashboard mostrando a quantidade de marcações que o funcionário realizou no dia, no mês, no ano e a quantidade total de marcações.
-<br/>
-
-## 🔮 Implementações futuras
-1. Contabilizar horas trabalhadas, horas extras, faltas.
-2. Gerar espelho de ponto e folha de ponto.
-3. Capturar localização do funcionário no momento da marcação.
+## 🛠️ Dados armazenados em banco
+- id da sessão do visitante
+- data e horário da visita
+- onde o visitante estava antes de chegar no site (facebook, google, instagram, linkedin, github, etc)
+- localização do visitante (pais, estado e cidade)
+- qual o dispositivo que o visitante usou para acessar o site (Desktop, Celular / Windows, IOS, Android / Chrome, Mozila, Safari, etc)
+- quais links no site que o visitante acessou (visualizou curriculo, enviou mensagem de whatsapp, mandou e-mail, acessou perfil do linkedin, acessou um dos projetos)
+- com esse tipo de informação é possível entender o comportamento do visitante no site.
 <br/>
 
 ## 📡 Tecnologias utilizadas 
 <div align="center"> 
-<img align="left" alt="Flask" height="30" width="30" src="https://cdn.buttercms.com/w8lc0UqsQCnPG0Ax6aiM">
+<img align="left" alt="Django" height="30" width="30" src="https://static-00.iconduck.com/assets.00/django-icon-1606x2048-lwmw1z73.png">
 <img align="left" alt="Python" height="30" width="30" src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg">
-<img align="left" alt="MySQL" height="30" width="30" src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg">
+<img align="left" alt="PostgreSQL" height="30" width="30" src="https://logonoid.com/images/postgresql-logo.png">
 <img align="left" alt="Docker" height="30" width="30" src="https://static-00.iconduck.com/assets.00/docker-icon-2048x2048-5mc7mvtn.png">    
 <img align="left" alt="AWS" height="30" width="30" src="https://saidvandeklundert.net/img/aws_logo.png">    
 </div>
 <br/><br/>
 
-- Backend utilizando Flask/Python
-- Flask-SQLAlchemy como ORM para facilitar a utilização do sistema com qualquer banco relacional
-- Flask-Migrate para criar/editar as tabelas do banco de dados
-- Flask-Bcrypt para criptografar as senhas dos usuários
+- Backend utilizando Django/Python
 - Frontend utilizando HTML, CSS, Javascript
 - Layout responsivo para utilização em Mobile
-- Docker para containerizar a aplicação na AWS facilitando a implantação do sistema
-- Database MySQL em container com Docker utilizando network para comunicação entre containers
+- Aplicação containerizada com Docker
+- Database PostgreSQL em container com Docker utilizando Network para comunicação entre containers e Volume para persistir os dados
+- Utilização de Compose para facilitar a gestão dos containers
+- Deploy na AWS
 <br/>
 
 ## 📺 Demonstração ao Vivo
@@ -43,7 +38,8 @@ Ele permite que os funcionários realizem a marcação do ponto eletrônico pelo
 <br/>
 
 ## 📸 Screenshot do Sistema
-![Sistema MarcPonto](https://github.com/user-attachments/assets/91cf1406-1caf-4263-8331-99e8af5fc6d4)
+![Portfólio](https://github.com/user-attachments/assets/cc8ccd42-8a09-4f65-98d8-a55f87ccdd8a)
+
 <br/><br/>
 
 ## 🔎 Status do Projeto
